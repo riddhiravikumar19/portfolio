@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PRIYADHARSHINI R — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="dot">PR</div>
+      <div class="logo-text">
+        <div class="name">PRIYADHARSHINI R</div>
+        <div class="sub">CSE Student • SRM University</div>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <button class="btn ghost" id="adminBtn">Admin</button>
+    </nav>
+  </header>
+
+  <div class="blobs" aria-hidden="true">
+    <svg viewBox="0 0 600 600" class="blob-svg" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="g1" x1="0" x2="1">
+          <stop offset="0" stop-color="#7c3aed"/>
+          <stop offset="1" stop-color="#06b6d4"/>
+        </linearGradient>
+      </defs>
+      <path class="blob floating" d="M421,42 C485,102 540,180 522,250 C504,320 411,380 335,426 C259,472 178,480 118,433 C58,386 50,290 72,214 C94,138 147,82 221,54 C295,26 357,-18 421,42Z" fill="url(#g1)"/>
+    </svg>
+  </div>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-left">
+        <div class="eyebrow">Hello, I'm</div>
+        <h1>PRIYADHARSHINI R — <span class="title-accent">Aspiring CSE Core Developer</span></h1>
+        <p class="lead">A curious and ambitious B.Tech CSE student at SRM University (2024–2028). I build collaborative web apps and study tools that help people focus and learn together — blending clean code with delightful UI and AI-inspired visuals.</p>
+
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </div>
+
+        <div class="meta-row">
+          <div class="meta">
+            <div class="muted">Location</div>
+            <div class="muted-strong">Chennai, India</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="profile-card">
+        <div class="profile-img">
+          <img src="images/profile.jpg" alt="Priyadharshini profile" onerror="this.src='https://picsum.photos/600/420?random=1'">
+        </div>
+        <div class="profile-meta">
+          <div class="meta-left">
+            <div class="profile-name">PRIYADHARSHINI R</div>
+            <div class="profile-sub">B.Tech CSE — SRM University</div>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/priyadharshini-ravikumar-0a24b6325" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn" width="32" height="32">
+              </a>
+              <a href="https://github.com/YourGitHubUsername" target="_blank">
+                <img src="images/github.png" alt="GitHub" width="32" height="32">
+              </a>
+
+              <a href="https://leetcode.com/u/Priyadharshini_ravikumar/" target="_blank">
+                <img src="images/leetcode.png" alt="LeetCode" width="32" height="32">
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="glass">
+      <h2>About Me</h2>
+      <p class="muted">I’m Priyadharshini — a core-focused CSE student driven by curiosity and practical building. I build collaborative tools and web apps that make learning social and fun. Outside of code I enjoy chess, badminton, and experimenting with AI-generated visuals.</p>
+    </section>
+
+    <!-- Education + Experience -->
+    <section class="grid-2">
+      <div class="glass">
+        <h3>Education</h3>
+        <div class="timeline">
+          <div class="time-item">
+            <div class="dot"></div>
+            <div>
+              <div class="title-strong">B.Tech — Computer Science & Engineering</div>
+              <div class="muted">SRM University of Science and Technology (2024 — 2028)</div>
+            </div>
+          </div>
+
+          <div class="time-item">
+            <div class="dot"></div>
+            <div>
+              <div class="title-strong">Montfort (School)</div>
+              <div class="muted">Graduated 2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass">
+        <h3>Experience</h3>
+        <div class="timeline">
+          <div class="time-item">
+            <div class="dot"></div>
+            <div>
+              <div class="title-strong">Intern — Wayspire</div>
+              <div class="muted">June — August 2025</div>
+              <div class="muted small">Worked on web development features and collaborative UX.</div>
+            </div>
+          </div>
+
+          <div class="time-item">
+            <div class="dot"></div>
+            <div>
+              <div class="title-strong">Project Intern — SRM University</div>
+              <div class="muted">Ongoing</div>
+              <div class="muted small">College-level project contributions.</div>
+            </div>
+          </div>
+
+          <div class="time-item">
+            <div class="dot"></div>
+            <div>
+              <div class="title-strong">Operation Team Member — TEDxSRM</div>
+              <div class="muted">2025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="glass">
+      <h3>Projects</h3>
+      <div class="projects-grid">
+        <div class="project" onclick="openProject('coa')">
+          <img src="images/project-coa.jpg" alt="COA Project" onerror="this.src='https://picsum.photos/400/220?random=23'">
+          <div class="proj-title">Portable WiFi Water Level Tracker — COA Project</div>
+          <div class="muted small">Monitors water level via WiFi & alerts. Tech: C, Arduino, IoT.</div>
+        </div>
+
+        <div class="project" onclick="openProject('lume')">
+          <img src="images/project-lume.jpg" alt="Lume Project" onerror="this.src='https://picsum.photos/400/220?random=24'">
+          <div class="proj-title">Lume — Virtual Study Room</div>
+          <div class="muted small">Collaborative study platform with Pomodoro timer, scoreboard, and smart to-do lists. Built with HTML, CSS, JS.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills + Certifications -->
+    <section class="grid-2">
+      <div id="skills" class="glass">
+        <h3>Skills</h3>
+        <div class="skills">
+          <div class="skill">
+            <div class="skill-title">C</div>
+            <div class="bar"><i data-val="85"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill-title">C++</div>
+            <div class="bar"><i data-val="80"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill-title">Java</div>
+            <div class="bar"><i data-val="75"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill-title">HTML</div>
+            <div class="bar"><i data-val="92"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill-title">CSS</div>
+            <div class="bar"><i data-val="90"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill-title">JavaScript</div>
+            <div class="bar"><i data-val="78"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill-title">Web Dev Course — Wayspire</div>
+            <div class="bar"><i data-val="88"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass">
+        <h3>Certifications</h3>
+        <div class="carousel">
+          <div class="cert">Python — Completed</div>
+          <div class="cert">Web Dev from wayspire — on going</div>
+          <div class="cert">Git & GitHub — on going</div>
+          <div class="cert">java — Completed</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="glass">
+      <h3>Contact Me</h3>
+      <div class="contact-grid">
+        <form class="contact" onsubmit="submitContact(event)">
+          <input type="text" id="name" placeholder="Your name" required>
+          <input type="email" id="email" placeholder="Your email" required>
+          <input type="text" id="subject" placeholder="Subject">
+          <textarea id="message" placeholder="Your message"></textarea>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+
+        <aside class="contact-card">
+          <div class="contact-block">
+            <div class="title-strong">Email</div>
+            <div class="muted">riddhiravikumar19@gmail.com</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      Built with ❤️ — PRIYADHARSHINI R • © 2025
+    </footer>
+  </main>
+
+  <!-- Project modal -->
+  <div id="projectModal" class="modal hidden" role="dialog" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="projTitle">Project</h3>
+        <button class="btn ghost" onclick="closeProject()">Close</button>
+      </div>
+      <div id="projBody" class="muted"></div>
+    </div>
+  </div>
+
+  <!-- Admin modal -->
+  <div id="adminModal" class="modal hidden" role="dialog" aria-hidden="true">
+    <div class="modal-card small">
+      <h3>Admin Login</h3>
+      <input id="admUser" placeholder="username">
+      <input id="admPass" type="password" placeholder="password">
+      <div class="admin-actions">
+        <button class="btn ghost" onclick="closeAdmin()">Cancel</button>
+        <button class="btn primary" onclick="adminLogin()">Login</button>
+      </div>
+      <div id="adminMsg" class="muted small"></div>
+    </div>
+  </div>
+
+  <button id="backToTop" class="btn primary">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
